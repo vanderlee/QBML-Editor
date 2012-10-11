@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+	QBML tool
+
+	@author Martijn W. van der Lee
+	@copyright Martijn W. van der Lee
+	@license http://www.gnu.org/licenses/gpl-3.0.html GPLv3
+
+	@todo Geef bij elke optie in de handle aan of 'ie geldig is (heeft description)
+	@todo Geef bij elke optie in de handle aan of de optie correct of incorrect is.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>QBML tool</title>
+		<!-- jQuery/jQueryUI (hosted) -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/sunny/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<script src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
+		<script src="jquery.cookie.js"></script><!-- store/retrieve cookies from JS -->
+		<script src="jquery.comments.js"></script><!-- extract comments from DOM -->
+		<script src="jquery.dialogs.js"></script><!-- jQuery-UI Dialog-based prompts -->
+		<script src="jquery.json-2.3.min.js"></script><!-- JSON decoding/encoding -->
+		<script src="jquery.tab.js"></script><!-- <textarea> working Tab-key -->
+		<script src="jquery.autosize.js"></script><!-- <textarea> automatic resize -->
+		<!-- Custom -->
+		<link href="qbmltool.css" rel="stylesheet" type="text/css"/>
+		<script src="qbmltool.js"></script>
+    </head>
+    <body class="theme">
+        <div id="switcher"></div>
+
+		<h1>QBML tool</h1>
+		<button class="clear">Alles wissen</button>
+		<button class="hide_all">- Invouwen</button>
+		<button class="show_all">+ Uitvouwen</button>
+		Sleur & pleur de vragen en antwoorden.
+		Klik op de headers (die grote blokken links) om in/uit te vouwen.
+		<br/>
+		<br/>
+		Naam: <input type="text" id="studentname"/>	Studentnr.: <input type="number" id="studentnumber"/>
+		<br/>
+		<div id="questionbank">
+		</div>
+		<button class="add_question">Vraag toevoegen</button> <span class="question_count">0</span> vragen.
+		<br/>
+		<h2>.qbml file&hellip;</h2>
+		<textarea id="qbml"></textarea>
+		<br/>Parse bovenstaande qbml&hellip;<button class="parse_qbml_replace">Vervangen</button>
+		<button class="parse_qbml_append">Toevoegen</button>
+    </body>
+</html>

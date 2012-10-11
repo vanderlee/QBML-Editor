@@ -1,0 +1,157 @@
+body {
+	font-size:		75%;
+	font-family:	'Segoe UI', Verdana, Helvetica, Arial, sans-serif;
+}
+
+#switcher {
+	float: 			right;
+	display: 		inline-block;
+}
+
+textarea, pre {
+	-webkit-tab-size:	4;
+	   -moz-tab-size:	4;
+		 -o-tab-size:	4;
+			tab-size:	4;
+}
+
+/* Stuff dealing with .field is an ugly mess (the rest is just a silly mess) */
+.field {
+	display: inline-block;
+	width: 75%;
+}
+.option .description {	width: 100%;	}
+.option .explanation {	width: 86.5%;		}
+.field * {
+	vertical-align: top;
+}
+.field label {
+	display: inline-block;
+	padding-top: .4em;
+}
+
+#questionbank,
+.options {
+	border: solid 1px #ccc;
+	background-color: #eee;
+	box-shadow: .1em .2em .4em #999 inset;
+	padding: .4em .4em 0 .4em;
+	overflow: hidden;
+	overflow-y: scroll;
+	clear: both;
+}
+
+#questionbank {
+	min-height: 15em;
+	max-height: 60em;
+}
+
+.options {
+	min-height: 10em;
+	max-height: 30em;
+}
+
+.question,
+.option {
+	border: solid 1px #999;
+	background-color: white;
+	padding: .4em;
+	box-shadow: .1em .2em .4em #999;
+	margin-bottom: .4em;
+}
+
+.placeholder {
+	background-color: black;
+	opacity: .25;
+	margin-bottom: .4em;
+}
+
+.delete {
+	float: right;
+}
+
+.option,
+.question {
+	display: table;
+	width: 99%;
+}
+.handle {
+	cursor: move;
+	padding: .4em;
+	display: table-cell;
+	width: 8em;
+	max-width: 4em;
+}
+
+.handle.ui-widget-header {
+	background-position: 0 0;
+}
+
+.content {
+	padding-left: .4em;
+	display: table-cell;
+}
+
+.question .description { width: 75%;		}
+
+.hint {
+	display: inline-block;
+	font-weight: normal;
+	font-style: italic;
+	min-width: 7em;
+	font-size: 90%;
+}
+
+.correct-count {
+	float: right;
+	padding: .4em;
+	border: solid 1px transparent;
+	-webkit-border-radius: .6em;
+	   -moz-border-radius: .6em;
+		-ms-border-radius: .6em;
+		 -o-border-radius: .6em;
+			border-radius: .6em;
+	margin-top: -.4em;
+	margin-right: -.3em;
+}
+
+.correct-state {
+	float: right;
+	color: #090;
+	-webkit-border-text-shadow: 0 0 8px #9f9;
+	   -moz-border-text-shadow: 0 0 8px #9f9;
+		-ms-border-text-shadow: 0 0 8px #9f9;
+		 -o-border-text-shadow: 0 0 8px #9f9;
+			border-text-shadow: 0 0 8px #9f9;
+}
+.correct-state.error {
+	color: #900;
+	-webkit-border-text-shadow: 0 0 8px #f99;
+	   -moz-border-text-shadow: 0 0 8px #f99;
+		-ms-border-text-shadow: 0 0 8px #f99;
+		 -o-border-text-shadow: 0 0 8px #f99;
+			border-text-shadow: 0 0 8px #f99;
+}
+
+.correct-count.error {
+	background-color: pink;
+	color: red;
+	border-color: red;
+	-webkit-box-shadow: 0 0 1em red;
+	   -moz-box-shadow: 0 0 1em red;
+		-ms-box-shadow: 0 0 1em red;
+		 -o-box-shadow: 0 0 1em red;
+			box-shadow: 0 0 1em red;
+}
+
+#qbml {
+	border: solid 1px #ccc;
+	width: 90%;
+	margin: 0 auto;
+	height: 10em;
+}
+
+.hide_all,
+.show_all {
+	float: right;
+}
