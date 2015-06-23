@@ -1,8 +1,6 @@
 /**
  * Dialog helpers for alert/confirm, managing their own jQueryUI L&F dialogs
- * @todo language
- * @todo options?
- * @author martijn@crmmailtech.nl
+ * @author martijn@vanderlee.com
  */
 
 (function( $ ){
